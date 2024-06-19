@@ -273,3 +273,6 @@ scoreboard objectives add Woa1ParticleTrail trigger
 scoreboard players set #woa1PhantomJump .num 1
 scoreboard players set #woa1Portal .num 1
 scoreboard objectives add woa1SinglesTimer dummy
+
+# OS1 cosmetics
+data modify storage os1:participation random set value {value:0}
