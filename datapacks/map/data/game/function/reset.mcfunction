@@ -83,3 +83,5 @@ scoreboard players set @e[tag=stock_temp,type=marker,scores={stocks_slot=0},limi
 scoreboard players set @e[tag=stock_temp,type=marker,scores={stocks_slot=0},limit=1] stocks_slot 6
 
 summon marker 0 4 0 {Tags:["actionbar_temp"]}
+
+gamerule sendCommandFeedback false

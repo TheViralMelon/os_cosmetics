@@ -268,6 +268,8 @@ scoreboard objectives add slimeegguseset minecraft.used:minecraft.slime_spawn_eg
 scoreboard objectives add MotX dummy
 scoreboard objectives add MotZ dummy
 
+gamerule sendCommandFeedback false
+
 # WoA1 cosmetics because tHEY GOT DELTED FSR
 scoreboard objectives add Woa1ParticleTrail trigger
 scoreboard players set #woa1PhantomJump .num 1

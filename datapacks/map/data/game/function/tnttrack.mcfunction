@@ -60,3 +60,8 @@ kill @s[scores={TBtimer=80..}]
 particle minecraft:spit ~ ~1 ~ 0.3 0.3 0.3 0 1 force
 
 execute if block ~ ~ ~ barrier run kill @s
+
+# OS1 Cosmetic
+# Implemented and designed by TheViralMelon
+execute as @s[tag=os1ViralBomb] run scoreboard players add #os1TBombTimer .num 1
+execute as @s[tag=os1ViralBomb] at @s if score #os1TBombTimer .num matches 10 run function game:tournament_rewards/os1/tracking_bomb/tick
