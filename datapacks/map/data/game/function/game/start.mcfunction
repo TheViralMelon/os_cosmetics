@@ -55,5 +55,5 @@ tag @a remove winner
 
 #> OS1 Cosmetics
 # Implemented by TheViralMelon
-data modify storage os1:trapper colors set value []
+data modify storage os1:tbomb colors set value []
 scoreboard players set #os1TBombTimer .num 0

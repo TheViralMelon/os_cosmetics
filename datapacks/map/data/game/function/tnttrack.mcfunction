@@ -53,15 +53,18 @@ scoreboard players add @s TBtimer 1
 
 execute as @s at @s positioned ~ ~ ~ if entity @e[tag=target,distance=..2.2] run scoreboard players set @s TBtimer 100
 
+# OS1 Cosmetic
+# Implemented and designed by TheViralMelon
+execute as @s[tag=os1ViralBomb] run scoreboard players add #os1TBombTimer .num 1
+execute as @s[tag=os1ViralBomb] at @s if score #os1TBombTimer .num matches 5 run function game:tournament_rewards/os1/tracking_bomb/tick
+execute as @s[scores={TBtimer=80..},tag=os1ViralBomb] run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 2 0.9
+execute as @s[scores={TBtimer=80..},tag=os1ViralBomb] run data modify storage os1:tbomb temp set value {count:2,dx:1.25,dy:1.25,dz:1.25,color:[],fade:[0.0,0.0,0.0]}
+execute as @s[scores={TBtimer=80..},tag=os1ViralBomb] run function game:tournament_rewards/os1/tracking_bomb/explosion_tick
+
 execute as @s[scores={TBtimer=80..}] at @s run summon tnt ~ ~.4 ~ {fuse:1}
 execute as @s[scores={TBtimer=90..}] at @s run summon tnt ~ ~.4 ~ {fuse:1}
 kill @s[scores={TBtimer=80..}]
 
-particle minecraft:spit ~ ~1 ~ 0.3 0.3 0.3 0 1 force
+execute as @s[tag=!os1ViralBomb] run particle minecraft:spit ~ ~1 ~ 0.3 0.3 0.3 0 1 force
 
 execute if block ~ ~ ~ barrier run kill @s
-
-# OS1 Cosmetic
-# Implemented and designed by TheViralMelon
-execute as @s[tag=os1ViralBomb] run scoreboard players add #os1TBombTimer .num 1
-execute as @s[tag=os1ViralBomb] at @s if score #os1TBombTimer .num matches 10 run function game:tournament_rewards/os1/tracking_bomb/tick

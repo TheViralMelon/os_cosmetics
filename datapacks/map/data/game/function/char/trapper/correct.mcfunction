@@ -25,8 +25,8 @@ clear @s[nbt=!{Inventory:[{id:"minecraft:emerald",Slot:3b}]},scores={TBtimer=-19
 scoreboard players set @s[nbt=!{Inventory:[{id:"minecraft:emerald",Slot:3b}]},scores={TBtimer=-199..-2}] TBtimer 1
 
 clear @s[nbt=!{Inventory:[{id:"minecraft:redstone",Slot:3b}]},scores={TBtimer=..-200}] redstone
+execute as @s[nbt={UUID:[I;830775973,-2059124427,-1980963265,-677121745]},scores={TBtimer=..-200}] unless items entity @s hotbar.3 minecraft:redstone run function game:tournament_rewards/toggle_cosmetic {fakeplayer:"#os1TrackingBomb"}
 scoreboard players set @s[nbt=!{Inventory:[{id:"minecraft:redstone",Slot:3b}]},scores={TBtimer=..-200}] TBtimer 1001
-execute as @s[nbt={UUID:[I;830775973,-2059124427,-1980963265,-677121745]}] unless items entity @s hotbar.3 minecraft:redstone run function game:tournament_rewards/toggle_cosmetic {fakeplayer:"#os1TrackingBomb"}
 
 clear @s[nbt=!{Inventory:[{id:"minecraft:diamond_sword",Slot:4b}]},scores={PlatTimer=..0}] diamond_sword
 execute as @s[nbt=!{Inventory:[{id:"minecraft:diamond_sword",Slot:4b}]},scores={PlatTimer=..0,platUse=2}] run function game:char/trapper/give/platform {damage:0}

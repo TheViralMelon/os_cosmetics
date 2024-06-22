@@ -10,6 +10,7 @@ execute as @s[scores={TBtimer=-10..}] at @s run function game:items/trackbomb
 
 #bow
 execute as @s[gamemode=adventure,scores={click=1..},nbt={SelectedItem:{id:"minecraft:bamboo"}},nbt={Inventory:[{id:"minecraft:arrow"}]}] at @s anchored eyes run summon minecraft:tnt ^ ^ ^3 {fuse:3,NoGravity:1}
+execute as @s[gamemode=adventure,scores={click=1..},nbt={SelectedItem:{id:"minecraft:bamboo"}},nbt={Inventory:[{id:"minecraft:arrow"}],SelectedItem:{id:"minecraft:bamboo"},UUID:[I;830775973,-2059124427,-1980963265,-677121745]}] run data modify storage os1:tbomb colors append value [0.0f,1.0f,0.0f]
 #coreboard players set @s[gamemode=adventure,scores={click=1..},nbt={SelectedItem:{id:"minecraft:bamboo"}},nbt={Inventory:[{id:"minecraft:arrow"}]}] bow 10
 clear @s[gamemode=adventure,scores={click=1..},nbt={SelectedItem:{id:"minecraft:bamboo"}},nbt={Inventory:[{id:"minecraft:arrow"}]}] arrow 1
 execute as @s[gamemode=adventure,scores={click=1..},nbt={SelectedItem:{id:"minecraft:flint"}},nbt={Inventory:[{id:"minecraft:arrow"}]}] at @s run tag @s[scores={trapdraw=0}] add med

@@ -13,13 +13,12 @@ execute as @s[tag=fast,scores={chickenbow=1..}] at @s run summon minecraft:marke
 
 #> OS1 Cosmetic for TheViralMelon
 # Implemented by TheViralMelon
-execute as @s[tag=med,scores={chickenbow=..0},nbt={UUID:[I;830775973,-2059124427,-1980963265,-677121745]}] run data modify storage os1:trapper colors prepend value [1.0f,1.0f,0.0f]
-execute as @s[tag=fast,scores={chickenbow=..0},nbt={UUID:[I;830775973,-2059124427,-1980963265,-677121745]}] run data modify storage os1:trapper colors prepend value [1.0f,0.0f,0.0f]
+execute as @s[tag=med,scores={chickenbow=..0},nbt={UUID:[I;830775973,-2059124427,-1980963265,-677121745]}] run data modify storage os1:tbomb colors append value [1.0f,1.0f,0.0f]
+execute as @s[tag=fast,scores={chickenbow=..0},nbt={UUID:[I;830775973,-2059124427,-1980963265,-677121745]}] run data modify storage os1:tbomb colors append value [1.0f,0.0f,0.0f]
 
 execute as @s[nbt={SelectedItem:{id:"minecraft:bamboo"}}] at @s anchored eyes run playsound minecraft:entity.arrow.shoot master @a ~ ~ ~ 1 0.5
 execute as @s[nbt={SelectedItem:{id:"minecraft:bamboo"}}] at @s anchored eyes run playsound minecraft:ui.loom.select_pattern master @a ~ ~ ~ 1 1.15
 execute as @s[nbt={SelectedItem:{id:"minecraft:bamboo"}}] at @s anchored eyes run summon minecraft:tnt ^ ^ ^3 {fuse:2}
-execute as @s[nbt={SelectedItem:{id:"minecraft:bamboo"},UUID:[I;830775973,-2059124427,-1980963265,-677121745]}] run data modify storage os1:trapper colors prepend value [0.0f,1.0f,0.0f]
 
 #execute as @s[tag=short] at @s anchored eyes run summon minecraft:tnt ^ ^ ^3 {fuse:2}
 
