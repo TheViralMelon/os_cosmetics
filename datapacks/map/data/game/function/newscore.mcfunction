@@ -278,4 +278,5 @@ scoreboard objectives add woa1SinglesTimer dummy
 
 # OS1 cosmetics
 data modify storage os1:participation random set value {value:0}
+data modify storage os1:singles circle set value {value:0,particle:""}
 scoreboard players set #os1TrackingBomb .num 1

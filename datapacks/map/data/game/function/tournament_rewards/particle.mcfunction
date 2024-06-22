@@ -20,3 +20,4 @@ execute as @s[scores={particle=902}] at @s rotated ~ 0 positioned ^ ^ ^-0.4 run 
 execute as @s[scores={particle=901,woa1SinglesTimer=0..}] at @s rotated ~ 0 positioned ^ ^ ^-0.4 run function game:tournament_rewards/woa1/singles
 
 execute as @s[scores={particle=903}] at @s rotated ~ 0 positioned ^ ^ ^-0.3 run function game:tournament_rewards/os1/participation/main
+execute as @s[scores={particle=904}] at @s rotated ~ 0 positioned ^ ^ ^-0.3 run function game:tournament_rewards/os1/singles/main
