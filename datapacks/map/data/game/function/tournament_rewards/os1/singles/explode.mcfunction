@@ -1,0 +1,1 @@
+$particle $(particle) ~ ~1 ~ $(delta) $(delta) $(delta) $(speed) $(count) force @a

@@ -1,4 +1,4 @@
-say running init.mcfunction
+# say running init.mcfunction
 # Implemented by TheViralMelon
 
 tag @s add os1ViralBomb

@@ -1,4 +1,5 @@
 execute as @s[x=620,y=20,z=620,distance=..100] at @s run particle explosion_emitter ~ ~ ~ 1 3 1 1 10 force
+execute as @s[x=620,y=20,z=620,distance=..100,scores={particle=904}] at @s run function game:tournament_rewards/os1/singles/death
 
 function game:player/class_team
 
